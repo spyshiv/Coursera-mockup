@@ -333,6 +333,250 @@ img {
   font-weight: lighter;
 }
 
+
+/*==================ABOUT SECTION====================*/
+
+#co-about-us {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 100px 0;
+}
+#co-about-us .co-about-us-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#co-about-us .co-about-us-area .co-about-us-left {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#co-about-us .co-about-us-area .co-about-us-left h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+#co-about-us .co-about-us-area .co-about-us-left ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+#co-about-us .co-about-us-area .co-about-us-left ul li {
+  line-height: 30px;
+  list-style: circle;
+}
+#co-about-us .co-about-us-area .co-about-us-right {
+  display: inline;
+  float: left;
+  width: 100%;
+  display: block;
+  width: 100%;
+  background-color: #ccc;
+}
+#co-about-us .co-about-us-area .co-about-us-right a {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+#co-about-us .co-about-us-area .co-about-us-right a img {
+  width: 100%;
+}
+#co-about-us .co-about-us-area .co-about-us-right a:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #ddd;
+  content: '\f04b';
+  font-family: fontAwesome;
+  font-size: 50px;
+  left: 0;
+  padding-top: 27%;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+/*==== about us dynamic video player ====*/
+#about-video-popup {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-align: center;
+  bottom: 0;
+  z-index: 99999;
+}
+#about-video-popup span {
+  color: #fff;
+  cursor: pointer;
+  float: right;
+  font-size: 30px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+#about-video-popup iframe {
+  background: url(../images/loader.gif) center center no-repeat;
+  margin: 10% auto;
+  width: 650px;
+  height: 450px;
+}
+
+.co-title {
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.co-title h2 {
+  color: #000;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.co-title p {
+  color: #555;
+  letter-spacing: 0.3px;
+  line-height: 1.7;
+  padding: 0 120px;
+}
+
+
+/*==================LATEST COURSES SECTION====================*/
+
+#co-latest-courses {
+  background-color: #333;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+#co-latest-courses .co-latest-courses-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#co-latest-courses .co-latest-courses-area .co-title h2 {
+  color: #fff;
+}
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content {
+  display: inline;
+  float: left;
+  margin-top: 50px;
+  width: 100%;
+}
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content .slick-slide {
+  outline: none;
+}
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content .slick-dots li {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 8px;
+  width: 20px;
+}
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content .slick-dots li button {
+  display: none;
+}
+
+.co-latest-course-single {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.co-latest-course-single .co-latest-course-img {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.co-latest-course-single .co-latest-course-img a {
+  display: block;
+}
+.co-latest-course-single .co-latest-course-img a img {
+  width: 100%;
+}
+.co-latest-course-single .co-latest-course-img .co-latest-course-imgcaption {
+  background-color: #f8f8f8;
+  display: inline;
+  float: left;
+  padding: 10px 15px;
+  width: 100%;
+}
+.co-latest-course-single .co-latest-course-img .co-latest-course-imgcaption a {
+  display: inline-block;
+  float: left;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.co-latest-course-single .co-latest-course-img .co-latest-course-imgcaption a {
+  font-size: 11px;
+}
+.co-latest-course-single .co-latest-course-single-content {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+.co-latest-course-single .co-latest-course-single-content h3 {
+  color: #333;
+  line-height: 1.4;
+}
+.co-latest-course-single .co-latest-course-single-content h3 a {
+  color: #333;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom {
+  border-top: 1px solid #ccc;
+  display: inline;
+  float: left;
+  margin-top: 15px;
+  padding-top: 15px;
+  width: 100%;
+}
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom .co-course-details {
+  display: inline-block;
+  float: left;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom .co-course-details:hover, 
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom .co-course-details:focus {
+  color: #333;
+}
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom .co-course-price {
+  display: inline-block;
+  float: right;
+}
+
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content .slick-dots .slick-active {
+  background-color: #01bafd;
+}
+
+#co-latest-courses .co-latest-courses-area .co-latest-courses-content .slick-arrow {
+  background-color: #01bafd;
+}
+
+.co-latest-course-single .co-latest-course-img .co-latest-course-imgcaption a:hover, 
+.co-latest-course-single .co-latest-course-img .co-latest-course-imgcaption a:focus {
+  color: #01bafd;
+}
+.co-latest-course-single .co-latest-course-single-content h3 a:hover, 
+.co-latest-course-single .co-latest-course-single-content h3 a:focus {
+  color: #01bafd;
+}
+.co-latest-course-single .co-latest-course-single-content .co-latest-course-single-contbottom .co-course-details {
+  color: #01bafd;
+}
+
 /*==================FOOTER====================*/
 
 #co-footer {
