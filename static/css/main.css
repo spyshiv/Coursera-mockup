@@ -577,6 +577,44 @@ img {
   color: #01bafd;
 }
 
+
+
+/*==================SEARCH RESULT PAGE====================*/
+
+#co-search-courses {
+  background-color:#fff;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  width: 100%;
+}
+
+#co-search-courses .co-title {
+  padding-bottom: 40px;
+}
+#co-search-courses .co-search-courses-content {
+  background-color:#eee; 
+  width: 100%;
+  float: left;
+}
+
+.co-search-courses-content .co-search-details {
+  padding: 10px;
+}
+
+.co-search-courses-content .co-search-course-single {
+  background-color:#fff;
+  box-shadow: 10px 10px 5px #eee;
+  padding: 10px;
+  min-height: 300px;
+  width: 100%;
+}
+
+.co-search-courses-content .co-search-course-img img{
+	width: 100%;
+	max-height: 100px;
+}
+
 /*==================FOOTER====================*/
 
 #co-footer {
