@@ -2,8 +2,90 @@
 {% load static %}
 {% block content %}
 {% include 'shared/nav.html' %}
-<div>
-Hello World
-</div>
+  <!-- Start Slider -->
+  <section id="co-slider">
+    <!-- Start single slider item -->
+    <div class="co-slider-single">
+      <div class="co-slider-img">
+        <figure>
+          <img src="{% static 'images/background-1.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="co-slider-content">
+        <h4>Welcome To Coursera</h4>
+        <span></span>
+        <h2>World's best courses, online</h2>
+        <p>Coursera provides universal access to the world’s best education, partnering with top universities and organizations to offer courses online.</p>
+        <a href="#" class="co-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="co-slider-single">
+      <div class="co-slider-img">
+        <figure>
+          <img src="{% static 'images/background-2.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="co-slider-content">
+        <h4>Welcome To Coursera</h4>
+        <span></span>
+        <h2>World's best courses, online</h2>
+        <p>Coursera provides universal access to the world’s best education, partnering with top universities and organizations to offer courses online.</p>
+        <a href="#" class="co-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="co-slider-single">
+      <div class="co-slider-img">
+        <figure>
+          <img src="{% static 'images/background-3.jpg' %}" alt="img">
+        </figure>
+      </div>
+      <div class="co-slider-content">
+        <h4>Welcome To Coursera</h4>
+        <span></span>
+        <h2>World's best courses, online</h2>
+        <p>Coursera provides universal access to the world’s best education, partnering with top universities and organizations to offer courses online.</p>
+        <a href="#" class="co-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->    
+  </section>
+
+  <!-- Start service  -->
+  <section id="co-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="co-service-area">
+            <!-- Start single service -->
+            <div class="co-service-single">
+              <span class="fa fa-book"></span>
+              <h3>Coursework</h3>
+              <p>Each course is like an interactive textbook, featuring pre-recorded videos, quizzes, and projects.</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="co-service-single">
+              <span class="fa fa-users"></span>
+              <h3>Help & Support</h3>
+              <p>Connect with thousands of other learners and debate ideas, discuss course material, and get help mastering concepts.</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="co-service-single">
+              <span class="fa fa-certificate"></span>
+              <h3>Certificates</h3>
+              <p>Earn official recognition for your work, and share your success with friends, colleagues, and employers.</p>
+            </div>
+            <!-- Start single service -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
 {% include 'shared/footer.html' %}
 {% endblock %}
