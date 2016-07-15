@@ -1,0 +1,5 @@
+Django==1.9.7
+dj-database-url
+gunicorn
+whitenoise
+psycopg2==2.5.4
