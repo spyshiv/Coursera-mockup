@@ -1,4 +1,182 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 16px;
+  overflow-x: hidden;
 }
+
+/*Individual site components */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  margin: 0;
+}
+
+img {
+  border: none;
+}
+
+
+/*==================NAVBAR SECTION====================*/
+
+#co-menu {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#co-menu .navbar-header .navbar-brand {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 20px;
+  letter-spacing: 0.5px;
+}
+#co-menu .navbar-header .navbar-brand i {
+  font-size: 35px;
+}
+#co-menu .navbar-header .navbar-brand span {
+  margin-left: 4px;
+}
+#co-menu .navbar-default {
+  background-color: #fff;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 0px;
+}
+#co-menu .navbar-default .navbar-nav li > a {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-bottom: -1px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#co-menu .navbar-default .navbar-nav li #co-search-icon:hover, #co-menu .navbar-default .navbar-nav li #co-search-icon:focus {
+  border: none;
+}
+#co-menu .navbar-default .navbar-nav li .dropdown-menu {
+  border-radius: 0px;
+}
+#co-menu .navbar-default .navbar-nav li .dropdown-menu li a {
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#co-menu .navbar-default .navbar-nav li .dropdown-menu li a:hover, #co-menu .navbar-default .navbar-nav li .dropdown-menu li a:focus {
+  color: #fff;
+}
+#co-menu .navbar-default .navbar-nav .open a:hover, #co-menu .navbar-default .navbar-nav .open a:focus {
+  color: #fff;
+}
+
+#co-search {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  transform: translateY(-100%) scale(0);
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+  width: 100%;
+  z-index: 99999;
+}
+#co-search .co-search-area {
+  display: inline;
+  float: left;
+  width: 100%;
+  padding: 20% 0;
+  text-align: center;
+}
+#co-search .co-search-area .co-search-close {
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  outline: none;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  right: 100px;
+  text-align: center;
+  top: 50px;
+  width: 50px;
+}
+#co-search .co-search-area .co-search-form input[type="search"] {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  height: 100px;
+  outline: medium none;
+  text-align: center;
+  width: 100%;
+}
+
+#co-search.co-search-open {
+  transform: translateY(0) scale(1);
+}
+
+#co-menu .navbar-header .navbar-brand i {
+  color: #01bafd;
+}
+#co-menu .navbar-default .navbar-nav li > a:hover, #co-menu .navbar-default .navbar-nav li > a:focus {
+  border-color: #01bafd;
+  color: #01bafd;
+}
+#co-menu .navbar-default .navbar-nav li .dropdown-menu {
+  border-top: 2px solid #01bafd;
+}
+#co-menu .navbar-default .navbar-nav li .dropdown-menu li a:hover, #co-menu .navbar-default .navbar-nav li .dropdown-menu li a:focus {
+  background-color: #01bafd;
+}
+#co-menu .navbar-default .navbar-nav .open a:hover, #co-menu .navbar-default .navbar-nav .open a:focus {
+  background-color: #01bafd;
+}
+
+#co-menu .navbar-default .navbar-nav > .active > a, #co-menu .navbar-default .navbar-nav > .active > a:hover, #co-menu .navbar-default .navbar-nav > .active > a:focus {
+  color: #01bafd;
+  border-bottom: 2px solid #01bafd;
+  background-color: transparent;
+}
+
+#co-search .co-search-area .co-search-close {
+  background-color: #01bafd;
+}
+
+
 
