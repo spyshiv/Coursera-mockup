@@ -15,4 +15,11 @@ def search(request):
 		response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes).json()
 		total = response['paging']['total']
 		elements = response['elements']
-	return render(request, 'search-result.html', {'total':total, 'elements':elements})
+		return render(request, 'search-result.html', {'total':total, 'elements':elements})
+	else:
+		return render(request, 'index.html')
+
+
+
+	
+		

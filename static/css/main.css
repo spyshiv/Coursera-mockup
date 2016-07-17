@@ -440,6 +440,60 @@ img {
   padding: 0 120px;
 }
 
+/*==================LATEST COURSES SECTION====================*/
+
+#co-partners {
+  display: inline;
+  float: left;
+  padding: 20px 0;
+  width: 100%;
+}
+
+#co-partners .co-partners-area {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#co-partners .co-partners-area .co-partners-content {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+#co-partners .co-partners-area .co-partners-content .slick-slide {
+  outline: none;
+}
+
+.co-partner-single {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.co-partner-single .co-partner-img {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.co-partner-single .co-partner-img img {
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+
+#co-partners .co-partners-area .co-partners-content .slick-dots .slick-active {
+  background-color: #01bafd;
+}
+
+#co-partners .co-partners-area .co-partners-content .slick-arrow {
+  background-color: #01bafd;
+}
+
 
 /*==================LATEST COURSES SECTION====================*/
 
