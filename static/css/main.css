@@ -683,7 +683,7 @@ img {
 
 .co-search-courses-content .co-search-course-img img{
 	width: 100%;
-	max-height: 100px;
+	height: 50px;
 }
 
 /*==================FOOTER====================*/
