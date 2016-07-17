@@ -2,7 +2,6 @@
 {% load static %}
 {% block content %}
 {% include 'shared/nav.html' %}
-
 <section id="co-search-courses">
     <div class="container">
       <div class="row">
@@ -21,9 +20,10 @@
                     <figure class="co-search-course-img">
                       <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank"><img src="{{course.partnerLogo}}" alt="img not found"></a>
                       <figcaption class="co-search-course-imgcaption">
-
-                        <!-- <a href="" id="">hehe</a> -->
-                   
+                          <a href="">Partners - {{course.partnerIds}}</a><br>
+                          <a href="">Instructures - {{course.instructorIds}}</a>
+                          <p>{{partners|lookup:course.partnerIds}}</p>
+                        
                       </figcaption>
                     </figure>
                     <div class="co-search-course-single-content">

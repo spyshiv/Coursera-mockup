@@ -20,7 +20,6 @@ def GetData(request, search_query):
 	url = "https://api.coursera.org/api/courses.v1?q=search&query="
 	fields = "name,partnerIds,instructorIds,partnerLogo" 
 	includes = "instructorIds,partnerIds"
-	print "#####", url + search_query + "&fields=" + fields + "&includes=" + includes
 	response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes).json()
 	total = response['paging']['total']
 	elements = response['elements']
@@ -28,11 +27,16 @@ def GetData(request, search_query):
 	partners = response['linked']['partners.v1']
 	instructors = response['linked']['instructors.v1']
 	data = zip(elements, partners, instructors)
-	return render(request, 'search-result.html', {'search_query':search_query, 'total':total, 'data':data})
+	return render(request, 'search-result.html', {'search_query':search_query, 'total':total, 'data':data, 'partners':partners})
 
-@register.filter
+@register.filter(name='lookup')
 def get_item(dictionary, key):
-    return dictionary.get(key)		
+	print dictionary
+	for item in dictionary:
+		if item['id'] == key:
+			print "############"
+
+	return 1		
 
 	
 		
