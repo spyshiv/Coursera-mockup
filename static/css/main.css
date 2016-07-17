@@ -39,6 +39,23 @@ img {
   border: none;
 }
 
+#co-error-message {
+  background-color: #333333;
+  color: #01bafd;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#co-error-message p {
+  margin: 0;
+} 
+
+#error-message-close {
+  cursor: pointer;
+  float: right;
+}
+
 .co-read-more-btn {
   border: 1px solid #fff;
   color: #fff;
@@ -912,11 +929,6 @@ img {
     text-align: center;
   }
 
-  #co-footer .co-footer-top .co-footer-top-area .co-footer-widget .co-subscribe-form input[type="email"] {
-    width: 50%;
-    margin-right: 10px;
-  }
-
   #about-video-popup iframe {
     height: 350px;
     width: 80%;
@@ -1006,12 +1018,7 @@ img {
     height: 300px;
     margin: 5% auto;
     width: 80%;
-  }
-
-  #co-footer .co-footer-top .co-footer-top-area .co-footer-widget .co-subscribe-form input[type="email"] {
-    margin-right: 0;
-    width: 100%;
-  }  
+  } 
 }
 
 @media (max-width: 360px) {

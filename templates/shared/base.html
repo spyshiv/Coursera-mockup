@@ -47,7 +47,12 @@
 </head>
 
 <body>
-	
+	{% if message %}
+        <div id="co-error-message">
+            <span>{{message}}</span><span id="error-message-close">X</span>
+        </div>
+    {% endif %}
+
     {% block content %}
 	{% endblock %}
 
