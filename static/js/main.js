@@ -118,6 +118,16 @@ jQuery(function($){
       ]
     });
 
+  // 6.  Testimonials
+    jQuery('#co-testimonial-slide').slick({
+      dots: true,
+      infinite: true,
+      arrows: false,
+      speed: 500,
+      autoplay: true,          
+      cssEase: 'linear'
+    }); 
+
     jQuery("#error-message-close").click(function(){
       $("#co-error-message").hide();
     });

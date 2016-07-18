@@ -648,6 +648,124 @@ img {
   color: #01bafd;
 }
 
+/*==================TESTIMONIAL SECTION====================*/
+
+
+#co-testimonial {
+  background-attachment: fixed;
+  background-image: url("../images/testimonial-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  display: inline;
+  float: left;
+  padding: 100px 0;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+#co-testimonial:after {
+  background-color: rgba(0, 0, 0, 0.8);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#co-testimonial .co-testimonial-area {
+  display: inline;
+  float: left;
+  padding: 0 150px;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item {
+  display: inline;
+  float: left;
+  width: 100%;
+  outline: none;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote {
+  background-color: #333;
+  border-radius: 4px;
+  display: inline;
+  float: left;
+  padding: 60px 30px;
+  width: 100%;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote blockquote {
+  border: none;
+  text-align: center;
+  margin-bottom: 0;
+  position: relative;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote blockquote:before {
+  content: '\f10d';
+  color: #fff;
+  font-family: fontAwesome;
+  font-style: italic;
+  left: 2%;
+  position: absolute;
+  top: 0;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote blockquote p {
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-img {
+  display: inline;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-img img {
+  background-color: #555;
+  border: 1px solid #888;
+  border-radius: 50%;
+  margin: -50px auto 5px;
+  padding: 0;
+  width: 120px;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-info {
+  display: inline;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-info h4 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-info span {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .slick-dots li {
+  background-color: #fff;
+  height: 8px;
+  width: 20px;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .slick-dots li button {
+  display: none;
+}
+
+#co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-info span {
+  color: #01bafd;
+}
+#co-testimonial .co-testimonial-area .co-testimonial-content .slick-dots .slick-active {
+  background-color: #01bafd;
+}
 
 
 /*==================SEARCH RESULT PAGE====================*/
@@ -948,6 +1066,18 @@ img {
     padding: 60px 0 90px;
   }
 
+   #co-testimonial .co-testimonial-area {
+    padding: 0 20px;
+  }
+
+  #co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote {
+    padding: 60px 15px;
+  }
+
+  #co-testimonial .co-testimonial-area .co-testimonial-content .co-testimonial-item .co-testimonial-quote blockquote::before {
+    left: 0;
+  }
+
   #co-search .co-search-area .co-search-form input[type="search"] {
     font-size: 30px;
   }
@@ -1098,6 +1228,15 @@ img {
     margin: 5% auto;
     width: 80%;
   } 
+  .co-pagination {
+    text-align: center;
+  }
+
+  .co-pagination .pagination li a {
+    font-size: 14px;
+    margin: 0 2px;
+    padding: 5px 12px;
+  }
 }
 
 @media (max-width: 360px) {
