@@ -13,23 +13,21 @@
             <!-- End Title -->
             <!-- Start search course content -->
             <div class="co-search-courses-content">
-            {% for course, partner ,instructor in data %}
+            {% for course in elements %}
               <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">
                 <div class="col-lg-3 col-md-3 col-xs-12 co-search-details">
                   <div class="co-search-course-single">
                     <figure class="co-search-course-img">
                       <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank"><img src="{{course.partnerLogo}}" alt="img not found"></a>
                       <figcaption class="co-search-course-imgcaption">
-                          <a href="">Partners - {{course.partnerIds}}</a><br>
-                          <a href="">Instructures - {{course.instructorIds}}</a>
-                          <p>{{partners|lookup:course.partnerIds}}</p>
-                        
+                          <p><b>Partners</b> - {{partners|filter_partners:course.partnerIds}}</p><br>
+                          <p><b>Instructures</b> - {{instructors|filter_instructors:course.instructorIds}}<p>
                       </figcaption>
                     </figure>
                     <div class="co-search-course-single-content">
                       <h5><a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">{{course.name}}</a></h5>
                       <div class="co-search-course-single-contbottom">
-                        <a class="co-course-details" href="#">More details</a>
+                        <a class="co-search-course-details" href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">More details</a>
                       </div>
                     </div>
                   </div>

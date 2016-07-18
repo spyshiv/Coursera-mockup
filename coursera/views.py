@@ -22,21 +22,35 @@ def GetData(request, search_query):
 	includes = "instructorIds,partnerIds"
 	response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes).json()
 	total = response['paging']['total']
-	elements = response['elements']
 	paging = response['paging']
+	elements = response['elements']
 	partners = response['linked']['partners.v1']
 	instructors = response['linked']['instructors.v1']
-	data = zip(elements, partners, instructors)
-	return render(request, 'search-result.html', {'search_query':search_query, 'total':total, 'data':data, 'partners':partners})
+	return render(request, 'search-result.html', {'search_query':search_query, 'total':total, 'elements':elements, 'partners':partners, 'instructors':instructors })
 
-@register.filter(name='lookup')
-def get_item(dictionary, key):
-	print dictionary
-	for item in dictionary:
-		if item['id'] == key:
-			print "############"
 
-	return 1		
+
+	
+# custom filters
+@register.filter(name='filter_partners')
+def filter_partners(partners_data, keys):
+	result = []
+	partners = '';
+	for key in keys:
+		result = result + filter(lambda item: item['id'] == key, partners_data)
+	for partner in result:
+		partners = partners + ' ' + partner['name']
+	return partners
+
+@register.filter(name='filter_instructors')
+def filter_instructors(instructors_data, keys):
+	result = []
+	instructors = '';
+	for key in keys:
+		result = result + filter(lambda item: item['id'] == key, instructors_data)
+	for instructor in result:
+		instructors = instructors + ' ' + instructor['fullName']
+	return instructors
 
 	
 		
