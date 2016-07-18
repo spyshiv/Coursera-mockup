@@ -663,26 +663,27 @@ img {
 #co-search-courses .co-title {
   padding-bottom: 40px;
 }
+
 #co-search-courses .co-search-courses-content {
   background-color:#eee; 
   width: 100%;
   float: left;
 }
 
-.co-search-courses-content .co-search-details {
-  
-}
-
 .co-search-courses-content .co-search-course-single {
   background-color:#fff;
+  height: 300px;
+  overflow: auto;
   padding: 10px;
-  min-height: 300px;
+  position: relative;
   width: 100%;
 }
 
-.co-search-courses-content .co-search-course-img img{
-	width: 100%;
+.co-search-course-single .co-search-course-img img{
+  outline: 5px solid #eee;
 	height: 50px;
+  padding: 4px;
+  width: 100%;
 }
 
 .co-search-details {
@@ -690,18 +691,30 @@ img {
   margin-bottom: 10px;
 }
 
+.co-search-course-single-content .co-search-course-single-contbottom h5,
+.co-search-course-single-content .co-search-course-single-contbottom h6 {
+  padding-top: 10px;
+  text-align: center;
+}
+
 .co-search-course-details {
   border: 1px solid #333333;
+  bottom:5%;
   color: #333333;
   display: inline-block;
-  margin-top: 10px;
-  padding: 5px 12px;
+  font-size: 12px;
+  left: 50%;
+  margin-left: -60px;
+  padding: 5px 8px;
+  position: absolute;
   text-transform: uppercase;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  text-align: center;
   transition: all 0.5s;
+  width: 120px;
 }
 
 .co-search-course-details:hover, 
@@ -711,6 +724,47 @@ img {
   color: #fff;
 }
 
+.co-pagination {
+  display: inline;
+  float: left;
+  width: 100%;
+}
+.co-pagination .pagination li:first-child a {
+  border-radius: 0;
+}
+.co-pagination .pagination li:first-child a span {
+  margin-right: 5px;
+}
+.co-pagination .pagination li:last-child a {
+  border-radius: 0;
+}
+.co-pagination .pagination li:last-child a span {
+  margin-left: 5px;
+}
+.co-pagination .pagination li a {
+  color: #333;
+  margin: 0 5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.co-pagination .pagination li a:hover, .co-pagination .pagination li a:focus {
+  color: #fff;
+}
+.co-pagination .pagination .active a {
+  color: #fff;
+}
+
+.co-pagination .pagination li a:hover, .co-pagination .pagination li a:focus {
+  background-color: #01bafd;
+  border-color: #01bafd;
+}
+.co-pagination .pagination .active a {
+  background-color: #01bafd;
+  border-color: #01bafd;
+}
 /*==================FOOTER====================*/
 
 #co-footer {

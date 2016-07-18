@@ -21,7 +21,11 @@ def GetData(request, search_query):
 	fields = "name,partnerIds,instructorIds,partnerLogo" 
 	includes = "instructorIds,partnerIds"
 	response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes).json()
+	print url + search_query + "&fields=" + fields + "&includes=" + includes
 	total = response['paging']['total']
+	page_div = total / 20
+	remainder = total % 20
+	print "##############", page_div, remainder
 	paging = response['paging']
 	elements = response['elements']
 	partners = response['linked']['partners.v1']
@@ -38,8 +42,13 @@ def filter_partners(partners_data, keys):
 	partners = '';
 	for key in keys:
 		result = result + filter(lambda item: item['id'] == key, partners_data)
+	count = 1
 	for partner in result:
-		partners = partners + ' ' + partner['name']
+		if(count == 1):
+			partners = partner['name']
+			count += 1
+		else:
+			partners = partners + ' & ' + partner['name']
 	return partners
 
 @register.filter(name='filter_instructors')
@@ -48,8 +57,13 @@ def filter_instructors(instructors_data, keys):
 	instructors = '';
 	for key in keys:
 		result = result + filter(lambda item: item['id'] == key, instructors_data)
+	count = 1
 	for instructor in result:
-		instructors = instructors + ' ' + instructor['fullName']
+		if(count == 1):
+			instructors = instructor['fullName']
+			count += 1
+		else:
+			instructors = instructors + ', ' + instructor['fullName']
 	return instructors
 
 	

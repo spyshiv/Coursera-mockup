@@ -16,26 +16,48 @@
             {% for course in elements %}
               <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">
                 <div class="col-lg-3 col-md-3 col-xs-12 co-search-details">
-                  <div class="co-search-course-single">
-                    <figure class="co-search-course-img">
-                      <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank"><img src="{{course.partnerLogo}}" alt="img not found"></a>
-                      <figcaption class="co-search-course-imgcaption">
-                          <p><b>Partners</b> - {{partners|filter_partners:course.partnerIds}}</p><br>
-                          <p><b>Instructures</b> - {{instructors|filter_instructors:course.instructorIds}}<p>
-                      </figcaption>
-                    </figure>
-                    <div class="co-search-course-single-content">
-                      <h5><a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">{{course.name}}</a></h5>
-                      <div class="co-search-course-single-contbottom">
-                        <a class="co-search-course-details" href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">More details</a>
-                      </div>
-                    </div>
-                  </div>
+                  	<div class="co-search-course-single">
+	                    <figure class="co-search-course-img">
+	                      <a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank"><img src="{{course.partnerLogo}}" alt="img not found"></a>
+	                    </figure>
+	                    <div class="co-search-course-single-content">
+	                      	<div class="co-search-course-single-contbottom">
+	                      		<h5><a href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">{{course.name}}</a></h5>
+	                      		<br>
+		                      	<h6><b>Partners</b> <br>{{partners|filter_partners:course.partnerIds}}</h6>
+	                          	<h6><b>Instructures</b><br>{{instructors|filter_instructors:course.instructorIds}}<h6>
+	                      	</div>
+	                    </div>
+	                    <a class="co-search-course-details" href="https://www.coursera.org/learn/{{course.slug}}" target="_blank">More details</a>
+                  	</div>
                 </div>
               </a>
             {% endfor %}
             </div>
             <!-- End search course content -->
+            <!-- start course pagination -->
+                <div class="co-pagination">
+                  <nav>
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span class="fa fa-angle-left"></span> Prev 
+                        </a>
+                      </li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li><a href="#">5</a></li>
+                      <li>
+                        <a href="#" aria-label="Next">
+                         Next <span class="fa fa-angle-right"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+            <!-- end course pagination -->
         </div>
       </div>
     </div>
