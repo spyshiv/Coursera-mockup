@@ -35,7 +35,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">            
-            <form class="co-search-form" action="{% url 'coursera:search' %}" method="post">
+            <form class="co-search-form" action="{% url 'coursera:search' %}" method="get">
                 {% csrf_token %}
               <input type="search" placeholder="Search Any Topic" name="search-query" required="required">              
             </form>
