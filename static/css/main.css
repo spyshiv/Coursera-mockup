@@ -774,7 +774,7 @@ img {
   background-color:#fff;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 60px 0;
   width: 100%;
 }
 
@@ -784,7 +784,6 @@ img {
 
 #co-search-courses .co-search-courses-content {
   background-color:#eee; 
-  width: 100%;
   float: left;
 }
 
@@ -882,6 +881,29 @@ img {
 .co-pagination .pagination .active a {
   background-color: #01bafd;
   border-color: #01bafd;
+}
+
+.co-search-filter-area {
+  background-color: #eee;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.co-search-filter-single {
+  padding: 0 20px 20px 20px;
+}
+
+.co-search-filter-single input {
+  line-height: 1.9;
+}
+
+.co-search-filter-single span {
+  float: right;
+}
+
+.co-search-filter-single a {
+  color: #01bafd;
 }
 /*==================FOOTER====================*/
 

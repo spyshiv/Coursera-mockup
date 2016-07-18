@@ -26,7 +26,7 @@ def GetData(request, search_query, start, result_page):
 	url = "https://api.coursera.org/api/courses.v1?q=search&query="
 	fields = "name,partnerIds,instructorIds,partnerLogo" 
 	includes = "instructorIds,partnerIds"
-	response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes + "&start=" + start + "&limit=20").json()
+	response = requests.get(url + search_query + "&fields=" + fields + "&includes=" + includes + "&start=" + start + "&limit=21").json()
 	print url + search_query + "&fields=" + fields + "&includes=" + includes
 	total = response['paging']['total']
 	page_div = Pagination(total)
@@ -38,8 +38,8 @@ def GetData(request, search_query, start, result_page):
 	return render(request, 'search-result.html', {'search_query':search_query, 'total':total, 'elements':elements, 'partners':partners, 'instructors':instructors, 'page_div':range(1,page_div+1), 'result_page':result_page })
 
 def Pagination(total):
-	page_no = total / 20
-	remain = total % 20
+	page_no = total / 21
+	remain = total % 21
 	if remain == 0:
 		total_page = page_no
 	else:
