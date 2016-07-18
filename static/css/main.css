@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #ffffff;
-  color: #333333;
+  color: #333;
   font-size: 16px;
   overflow-x: hidden;
 }
@@ -15,7 +15,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: #333;
 }
 
 a:hover,
@@ -40,7 +40,7 @@ img {
 }
 
 #co-error-message {
-  background-color: #333333;
+  background-color: #333;
   color: #01bafd;
   padding: 10px;
   text-align: center;
@@ -125,7 +125,7 @@ img {
   border-radius: 0px;
 }
 #co-menu .navbar-default .navbar-nav li .dropdown-menu li a {
-  color: #333333;
+  color: #333;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -492,10 +492,24 @@ img {
 .co-partner-single .co-partner-img {
   display: inline;
   float: left;
+  height: 40px;
+  padding: 4px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   width: 100%;
 }
 
-.co-partner-single .co-partner-img img {
+.co-partner-single .co-partner-img img:hover,
+.co-partner-single .co-partner-img img:focus {
+  background-color: #eee;
+  box-shadow: 2px 2px 2px #333;
+  outline: 2px solid #eee;
+}
+
+.co-partner-single .co-partner-img img{
   height: 30px;
   padding-left: 10px;
   padding-right: 10px;
@@ -515,10 +529,10 @@ img {
 /*==================LATEST COURSES SECTION====================*/
 
 #co-latest-courses {
-  background-color: #333;
+  background-color: #eee;
   display: inline;
   float: left;
-  padding: 100px 0;
+  padding: 40px 0;
   width: 100%;
 }
 #co-latest-courses .co-latest-courses-area {
@@ -526,8 +540,10 @@ img {
   float: left;
   width: 100%;
 }
+
 #co-latest-courses .co-latest-courses-area .co-title h2 {
-  color: #fff;
+  margin-top: 40px;
+  color: #333;
 }
 #co-latest-courses .co-latest-courses-area .co-latest-courses-content {
   display: inline;
@@ -815,9 +831,9 @@ img {
 }
 
 .co-search-course-details {
-  border: 1px solid #333333;
+  border: 1px solid #333;
   bottom:5%;
-  color: #333333;
+  color: #333;
   display: inline-block;
   font-size: 12px;
   left: 50%;
